@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>RTLS</title>
+</head>
+
+<body>
+    <div>
+        <h1>RTLS - Indoor Position Algorithm</h1>
+        <h3>Simulação de estimativa de posição por multilateração</h3>
+        <p>
+            O algoritmo funciona com o mesmo princípio do GPS, porém utilizando beacons no teto de um armazém no lugar de satélites.<br />
+            Utilize o ponteiro do mouse para simular o deslocamento de uma pessoa no plano.<br />
+            Assim como o ponteiro do mouse representa a posição real de uma pessoa, o ponto branco representa a posição estimada.
+        </p>
+    </div>
+    <div>
+        <canvas id="canvas" width="1100" height="700"></canvas>
+        <canvas id="layer1" width="1100" height="700"></canvas>
+        <canvas id="layer2" width="1100" height="700"></canvas>
+    </div>
+    <script src="js/canvas.js"></script>
+    <script type="text/javascript">
+        document.onload = inicializacao_calculando_distancias();
+    </script>
+</body>
+
+</html>

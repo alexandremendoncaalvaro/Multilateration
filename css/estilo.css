@@ -1,0 +1,30 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: dodgerblue;
+    text-align: left;
+}
+
+div {
+    position: relative;
+}
+
+canvas
+{
+    position: absolute; left: 0px; top: 10px;
+}
+
+#canvas{
+    border: 1px solid rgb(166, 215, 255);
+    background-color: #111;
+    z-index: 0;
+}
+
+#layer1{
+    z-index: 1;
+}
+
+#layer2{
+    z-index: 2;
+}
