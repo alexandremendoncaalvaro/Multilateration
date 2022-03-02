@@ -251,10 +251,10 @@ function plotar_beacons_ativos(px, py) {
     }
 
     plotar_ponto(p, "white");
-    var menssagem = px + ',' + py;
+    var mensagem = px + ',' + py;
     contexto.fillStyle = "white";
     contexto.font = "10px Arial";
-    contexto.fillText(menssagem, px + margem + tamanho_ponto, py + margem + offset_centro_ponto / 2);
+    contexto.fillText(mensagem, px + margem + tamanho_ponto, py + margem + offset_centro_ponto / 2);
 }
 
 function plotar_beacons_lidos(beacons) {
